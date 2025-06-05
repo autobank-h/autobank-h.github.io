@@ -77,24 +77,26 @@
 			<h1>오시는길</h1> 
 		</header>
 		
-		<!-- 1. 지도 노드 -->
-<div id="daumRoughmapContainer1749116221636" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+		<div style="display: flex; justify-content: center;">
+			<!-- 1. 지도 노드 -->
+			<div id="daumRoughmapContainer1749116221636" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+		</div>
 
-<!-- 2. 카카오맵 스크립트 -->
-<script charset="UTF-8" class="daum_roughmap_loader_script"
+		<!-- 2. 카카오맵 스크립트 -->
+		<script charset="UTF-8" class="daum_roughmap_loader_script"
         src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-<!-- 3. 실행 스크립트 -->
-<script>
-  window.addEventListener("load", function () {
-    new daum.roughmap.Lander({
-      "timestamp": "1749116221636",
-      "key": "32cxfgceiqg",
-      "mapWidth": "640",
-      "mapHeight": "360"
-    }).render();
-  });
-</script>
+		<!-- 3. 실행 스크립트 -->
+		<script>
+		  window.addEventListener("load", function () {
+			new daum.roughmap.Lander({
+			  "timestamp": "1749116221636",
+			  "key": "32cxfgceiqg",
+			  "mapWidth": "640",
+			  "mapHeight": "360"
+			}).render();
+		  });
+		</script>
 
 		<footer>
 			<div class="bottom cs1">주소 : 경기도 광주시 중대동 28-74 </div>

@@ -10,6 +10,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			.mobile-friendly-text {
+				font-size: 1.1rem; /* h4와 비슷한 크기 */
+				font-weight: 600;   /* h4와 유사한 두께 */
+				line-height: 1.8;
+				margin: 20px 0;
+				text-align: left;
+				word-break: keep-all; /* 한국어 줄바꿈 자연스럽게 */
+			}
+
+			@media (max-width: 600px) {
+				.mobile-friendly-text {
+				font-size: 1rem;
+				padding: 0 10px;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -33,10 +51,10 @@
 							<header>
 								<h1><strong>오토뱅크</strong></h1>
 								<h3>소형 바이크 판매, 바이크 정비/수리합니다.<br>
-								영업시간 : 월~금 09:30 ~ 19:00
+								영업시간 : 월~금 09:00 ~ 19:00
 								</h3>
 							</header>
-							<h4>
+							<div class="mobile-friendly-text">
 							안녕하세요!<br><br>
 
 							오전에는 전날 수리나 출장으로 인한 업무로 바쁘게 보내고,<br>
@@ -47,7 +65,7 @@
 							문제가 발생하거나 궁금한 사항이 있으시면 망설이지 말고 알려주세요.<br><br>
 
 							쾌적한 서비스로 보답하겠습니다. 감사합니다!
-							</h4>
+							</div>
 						</div>
 					</div>
 				</div>
